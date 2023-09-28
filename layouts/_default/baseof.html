@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Document Title -->
+      <title>
+         My Personal Site | {{ block "title" . }} {{ .Site.Title }} {{ end }}
+      </title>
+
+      <!-- Metas -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="" />
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" href="/assets/images/favicon.ico" />
+
+      {{ partial "header-scripts.html" . }}
+   </head>
+   <body>
+      <!-- Page Wrapper -->
+      <div id="page" class="site">
+         <!-- Header section -->
+         {{ partial "header.html" . }}
+
+         <div class="site-content-contain">
+            <div id="content" class="site-content">
+               <div id="primary" class="content-area">
+                  <main id="main" class="site-main" role="main">
+                     {{ block "main" . }} {{ end }}
+                  </main>
+               </div>
+
+               <a
+                  id="gotoTop"
+                  href="#"
+                  class="scroll-top-link"
+                  data-easing="easeOutQuad"
+                  data-speed="700"
+                  ><i class="fa fa-angle-up"></i
+               ></a>
+            </div>
+
+            {{ partial "footer.html" . }}
+         </div>
+      </div>
+
+      {{ partial "footer-scripts.html" . }}
+   </body>
+</html>
