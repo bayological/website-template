@@ -5,5 +5,7 @@ title = 'Home'
 [params]
     linkedInUrl = "https://www.google.com"
     githubUrl = "https:www.youtube.com"
+    profileImage = "generic-headshot-placeholder.jpg"
+
 
 disableKinds = ["taxonomy", "taxonomyTerm"]

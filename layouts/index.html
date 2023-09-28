@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+<!-- This file contains code that dictates the structure of the site. -->
+
 <article class="page">
    <div class="entry-content">
       <div class="container m-t-75 m-t-35-res">
@@ -9,7 +11,7 @@
                   <div class="single-image">
                      <figure class="figure">
                         <img
-                           src="/assets/images/generic-headshot-placeholder.jpg"
+                           src="/assets/images/{{ .Site.Params.profileImage }}"
                            class="figure-img img-fluid"
                         />
                      </figure>
